@@ -11,6 +11,8 @@
   --navyblue: #2e2f42;
   --slate: #434455;
   --cloud: #f4f4fd;
+  --ocean: #404bbf;
+  --underlinecolor: #9747ff;
 }
 
 body {
@@ -98,25 +100,42 @@ body {
 }
 
 .address-container {
-  height: 24px;
-  top: 24px;
-  font-family: inherit;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: 2%;
-  color: var(--slate);
   display: inline-block;
 }
 
 .mail-adress {
   width: 153px;
+  height: 24px;
+  top: 24px;
   left: 940px;
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 2%;
+  color: inherit;
+  text-decoration: none;
 }
 
 .telephone-number {
   width: 151px;
+  height: 24px;
+  top: 24px;
   left: 1133px;
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 2%;
+  color: inherit;
+  text-decoration: none;
+}
+
+.mail-adress:hover,
+.telephone-number:hover {
+  text-decoration: underline;
+  color: var(--ocean);
+  text-decoration-color: var(--underlinecolor);
 }
 
 /* top-line part(header) ends here */
@@ -151,9 +170,10 @@ body {
   height: 56px;
   top: 428px;
   left: 636px;
-  border-radius: 4px;
+  /* border-radius: 4px; */
   gap: 10px;
   background-color: var(--iris);
+  cursor: pointer;
 }
 
 .button-content {
@@ -165,6 +185,14 @@ body {
   line-height: 24px;
   letter-spacing: 4%;
   color: var(--white);
+}
+
+.hero-image button:hover {
+  background-color: var(--ocean);
+}
+
+.hero-image button:active {
+  background-color: var(--ocean);
 }
 
 /* spdt section starts here */
@@ -780,15 +808,6 @@ body {
   color: var(--cloud);
 }
 
-.footer-text a {
-  width: 115px;
-  height: 24px;
-  top: 3088px;
-  left: 156px;
-  /* white-space: nowrap; */
-  /* white-space: inherit; */
-}
-
 .footer-text p {
   width: 264px;
   height: 72px;
@@ -799,27 +818,29 @@ body {
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 2%;
-  color: var(--cloud);
+  color: inherit;
 }
 
-.logo-text-web {
-  width: 44px;
-  height: 21px;
+.footer-text a {
+  width: 115px;
+  height: 24px;
+  top: 3088px;
+  left: 156px;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 21px;
   letter-spacing: 3%;
+}
+
+.logo-text-web {
+  width: 44px;
+  height: 21px;
   color: var(--iris);
 }
 
 .logo-text-studio {
   width: 71px;
   height: 21px;
-  font-family: "Raleway", sans-serif;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 21px;
-  letter-spacing: 3%;
   color: var(--cloud);
 }
