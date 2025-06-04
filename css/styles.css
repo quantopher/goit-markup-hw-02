@@ -16,6 +16,7 @@
 
 body {
   font-family: "Roboto", sans-serif;
+  color: var(--navyblue);
   /* color: var(--white); */
 }
 
@@ -179,6 +180,9 @@ body {
   left: 636px;
   gap: 10px;
   background-color: var(--iris);
+  border: 1px 1px 1px 1px;
+  border-color: var(--underlinecolor);
+  border-radius: 5px;
   cursor: pointer;
 }
 
@@ -507,6 +511,19 @@ body {
   line-height: 24px;
   letter-spacing: 2%;
   color: var(--slate);
+}
+
+/* this part add every team member name and content underline when hover */
+.team-card-one-content h3:hover,
+.team-card-one-content p:hover,
+.team-card-two-content h3:hover,
+.team-card-two-content p:hover,
+.team-card-three-content h3:hover,
+.team-card-three-content p:hover,
+.team-card-four-content h3:hover,
+.team-card-four-content p:hover {
+  text-decoration: underline;
+  text-decoration-color: var(--underlinecolor);
 }
 
 /* team members part ends here */
