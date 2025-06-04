@@ -180,8 +180,7 @@ body {
   left: 636px;
   gap: 10px;
   background-color: var(--iris);
-  border: 1px 1px 1px 1px;
-  border-color: var(--underlinecolor);
+  border: none;
   border-radius: 5px;
   cursor: pointer;
 }
@@ -199,6 +198,7 @@ body {
 
 .hero-image button:hover {
   background-color: var(--ocean);
+  /* border-color: var(--underlinecolor); */
 }
 
 .hero-image button:active {
